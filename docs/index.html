@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer"/><title>StoryIn</title><link rel="manifest" href="/manifest.json"/><meta name="theme-color" content="#1976d2"/><link rel="icon" href="/public/images/favicon.png" sizes="48x48" type="image/png"/><link rel="apple-touch-icon" href="/public/images/logo/logo.png" sizes="192x192" type="image/png"/><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><style>.brand-title {
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #ffd700;
+        letter-spacing: 2px;
+        margin: 110px 0 18px 0; /* Tambahkan margin-top agar tidak tertutup navbar */
+        text-align: center;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+        z-index: 2;
+        position: relative;
+      }
+      @media (max-width: 768px) {
+        .brand-title {
+          font-size: 1.5rem;
+          margin-top: 90px;
+        }
+      }</style><script defer="defer" src="app.bundle.js"></script><link href="app.css" rel="stylesheet"></head><body><header><a href="#main-content" class="skip-to-content">Skip to main content</a><div class="brand-title">StoryIn</div><nav id="navbar"></nav></header><main id="main-content" tabindex="0"></main><footer><p>&copy; 2025 StoryIn. All rights reserved.</p></footer><script>// Register service worker for PWA and push notification
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(reg) {
+              console.log('Service Worker registered with scope:', reg.scope);
+            })
+            .catch(function(err) {
+              console.log('Service Worker registration failed:', err);
+            });
+        });
+      }</script></body></html>

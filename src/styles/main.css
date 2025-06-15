@@ -1,0 +1,17 @@
+/* ...existing code... */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* tambahkan background agar navbar tidak transparan */
+  background: #fff;
+  /* ...existing code... */
+}
+
+.dashboard-content, .map-container {
+  /* Ganti selector sesuai dengan kontainer dashboard/maps Anda */
+  margin-top: 60px; /* Ganti 60px dengan tinggi navbar Anda */
+}
+/* ...existing code... */
